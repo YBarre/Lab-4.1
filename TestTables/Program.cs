@@ -150,7 +150,7 @@ namespace TestTables
                 Console.WriteLine();
                 #endregion
 
-                // regions to minimise
+                // regions
                 #region READ
                 // Construct the query operation for all customer entities in partition called "My_Peoples_Partition".
                 TableQuery<CustomerEntity> query5 = new TableQuery<CustomerEntity>().Where(TableQuery.GenerateFilterCondition("PartitionKey", QueryComparisons.Equal, partitionName));
